@@ -21,7 +21,7 @@ IMAGE=sawano/ubuntu-oraclejdk8:local
 $(docker image inspect "${IMAGE}" >/dev/null 2>&1) || IMAGE_EXISTS=$? && true
 if [[ "${IMAGE_EXISTS}" -ne 0 ]]; then
     echo "No local image found. Creating  image..."
-    docker build -t "${IMAGE}".
+    docker build -t "${IMAGE}" .
 fi
 
 # Now you can start using the image...
