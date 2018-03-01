@@ -4,7 +4,7 @@
 
 # Command reference:
 # docker build -t sawano/ubuntu-openjdk8:0.0.1 -t sawano/ubuntu-openjdk8:latest .
-# docker run -it sawano/ubuntu-openjdk8 /bin/bash
+# docker run -it --rm sawano/ubuntu-openjdk8 /bin/bash
 
 
 # 17.10/artful
